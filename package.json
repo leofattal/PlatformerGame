@@ -1,0 +1,19 @@
+{
+  "name": "adventure-quest-platformer",
+  "version": "0.1.0",
+  "description": "A classic-inspired 2D side-scrolling platformer game",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "game",
+    "platformer",
+    "html5",
+    "canvas",
+    "2d"
+  ],
+  "author": "Adventure Quest Team",
+  "license": "MIT"
+}
