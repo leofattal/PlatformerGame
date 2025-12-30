@@ -25,46 +25,97 @@ A classic-inspired 2D side-scrolling platformer built with HTML5 Canvas and Java
 
 ```
 PlatformerGame/
-├── index.html           # Main HTML file
-├── prd.md              # Product Requirements Document
-├── README.md           # This file
+├── index.html              # Main HTML file
+├── prd.md                  # Product Requirements Document
+├── README.md               # This file
+├── DEPLOYMENT.md           # Deployment guide
+├── DEPLOY_NOW.md          # Quick deployment steps
+├── vercel.json             # Vercel configuration
+├── package.json            # Project metadata
 └── js/
-    ├── main.js         # Entry point and initialization
-    ├── game.js         # Main game loop and state management
-    ├── player.js       # Player character (Nova) logic
-    ├── level.js        # Level data and rendering
-    ├── physics.js      # Physics engine and collision detection
-    ├── input.js        # Input handling
-    └── utils.js        # Constants and utility functions
+    ├── main.js             # Entry point and initialization
+    ├── game.js             # Main game loop and state management
+    ├── player.js           # Player character (Nova) logic
+    ├── level.js            # Level data and rendering
+    ├── physics.js          # Physics engine and collision detection
+    ├── input.js            # Input handling
+    ├── audio.js            # Sound effects system
+    ├── particles.js        # Particle effects
+    ├── collectibles.js     # Coins and collectibles
+    ├── enemies.js          # Enemy AI and behavior
+    └── utils.js            # Constants and utility functions
 ```
 
 ## Features Implemented
 
-### ✅ Phase 1: Core Gameplay (Current)
+### ✅ Phase 1: Core Gameplay (Completed!)
 
-- [x] Player character with smooth movement
+**Movement & Physics:**
+- [x] Player character (Nova) with smooth movement
 - [x] Run and sprint mechanics
 - [x] Variable height jumping
-- [x] Gravity and physics system
-- [x] Tile-based collision detection
-- [x] Coyote time (grace period for edge jumps)
-- [x] Jump buffering (pre-input)
-- [x] Camera following with smoothing
-- [x] Basic HUD (health, lives, coins, score)
-- [x] Pause functionality
+- [x] Gravity and physics system with rise/fall multipliers
+- [x] Tile-based collision detection (AABB)
+- [x] Coyote time (100ms grace period for edge jumps)
+- [x] Jump buffering (150ms pre-input window)
+- [x] Camera following with smooth lerp
+
+**Collectibles & Scoring:**
+- [x] Animated coins (small and large)
+- [x] Coin collection with bobbing animation
+- [x] Spinning coin effect
+- [x] 1-Up system (every 100 coins)
+- [x] Score tracking
+
+**Enemies:**
+- [x] Bounce Blobs (can be jumped on)
+- [x] Spike Shells (cannot be jumped on)
+- [x] Enemy AI with patrol patterns
+- [x] Enemy defeat mechanics
+- [x] Player damage and knockback
+- [x] Invincibility frames (1.5s)
+
+**Visual Effects:**
+- [x] Particle system with multiple effects
+- [x] Jump dust particles
+- [x] Landing dust clouds
+- [x] Coin collect sparkles
+- [x] Enemy defeat explosions
+- [x] Death particle effect
+
+**Audio:**
+- [x] Web Audio API sound system
+- [x] Jump sound effect
+- [x] Landing sound
+- [x] Coin collect chime
+- [x] Enemy defeat sound
+- [x] Damage/hurt sound
+- [x] Death sound
+- [x] 1-Up jingle
+
+**UI & Screens:**
+- [x] Full HUD (health hearts, lives, coins, score)
+- [x] Pause screen (ESC)
+- [x] Game Over screen with stats
+- [x] Level Complete screen
+- [x] Restart functionality
+
+**Technical:**
+- [x] 60 FPS game loop
 - [x] Pixel-perfect rendering (320x180 scaled 3x)
+- [x] Optimized collision detection
+- [x] Object pooling for particles
 
-### 🚧 Coming Next
+### 🚧 Coming Next (Phase 2)
 
-- [ ] Collectibles (coins, power-ups)
-- [ ] Enemies with AI
-- [ ] Sound effects and music
-- [ ] Multiple levels
 - [ ] World map system
-- [ ] Boss battles
+- [ ] Multiple levels (World 1: Grassland Grove)
+- [ ] Power-ups (Fire Flower, Ice Crystal)
 - [ ] Advanced abilities (double jump, dash, wall jump)
-- [ ] Particle effects
-- [ ] Better animations
+- [ ] Boss battle
+- [ ] Background music
+- [ ] Secret areas
+- [ ] Star fragments collectibles
 
 ## Game Architecture
 

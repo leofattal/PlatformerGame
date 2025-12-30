@@ -165,5 +165,40 @@ const TestLevel = {
         [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
         [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
         [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    ],
+    // Collectibles (coins)
+    coins: [
+        // Starting area coins
+        { x: 64, y: 180, type: 'small' },
+        { x: 80, y: 180, type: 'small' },
+        { x: 96, y: 180, type: 'small' },
+        { x: 112, y: 180, type: 'small' },
+        // Above first platform
+        { x: 160, y: 112, type: 'small' },
+        { x: 176, y: 96, type: 'small' },
+        { x: 192, y: 112, type: 'small' },
+        // Question block area
+        { x: 176, y: 80, type: 'large' },
+        // Second platform area
+        { x: 320, y: 128, type: 'small' },
+        { x: 336, y: 128, type: 'small' },
+        { x: 352, y: 128, type: 'small' },
+        // Third platform
+        { x: 432, y: 96, type: 'large' },
+        // High up coins
+        { x: 528, y: 144, type: 'small' },
+        { x: 544, y: 144, type: 'small' },
+        { x: 560, y: 144, type: 'small' }
+    ],
+    // Enemies
+    enemies: [
+        // First enemy
+        { x: 200, y: 192, type: 'bounceBlob' },
+        // Second enemy
+        { x: 300, y: 192, type: 'spikeShell' },
+        // Third enemy on platform
+        { x: 400, y: 192, type: 'bounceBlob' },
+        // Harder enemy
+        { x: 500, y: 192, type: 'spikeShell' }
     ]
 };
